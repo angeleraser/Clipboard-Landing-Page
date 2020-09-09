@@ -1,0 +1,36 @@
+.base-button {
+  text-align: center;
+  line-height: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 314px;
+  border-radius: 40px;
+  box-shadow: 0 -4px 1px rgba(0, 0, 0, 0.2) inset;
+}
+.base-button:focus {
+  outline: none;
+}
+.base-button.cyan-primary {
+  background-color: var(--strong-cyan-primary);
+}
+.base-button.light-blue-primary {
+  background-color: var(--light-blue-primary);
+}
+.base-button:first-of-type {
+  margin-bottom: 26px;
+}
+
+@media screen and (min-width: 686px) {
+  .base-button {
+    width: 228px;
+  }
+  .base-button:first-of-type{
+    margin-bottom: 0;
+    margin-right: 17px;
+  }
+}

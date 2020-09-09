@@ -1,0 +1,153 @@
+.main {
+  padding: 160px 32px 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* All sections styles  */
+.main > section {
+  margin-bottom: 145px;
+}
+
+.main > section.access-clipboard {
+  margin-bottom: 100px;
+}
+
+.main > section .heading {
+  max-width: 686px;
+}
+
+.main > section .heading h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--dark-grayish-blue-neutral);
+}
+
+.main > section .heading p {
+  margin-top: 16px;
+}
+
+.main > section p {
+  color: var(--grayish-blue-neutral);
+}
+
+.main .access-clipboard .image-devices {
+  margin-top: 66px;
+}
+
+/* Keep track your snippets  */
+.main .keep-your-snippets .illustration-info {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 56px;
+  place-items: center;
+  margin-top: 58px;
+}
+
+.main .keep-your-snippets .illustration-info .feature h3 {
+  color: var(--dark-grayish-blue-neutral);
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* Supercharge your workflow  */
+.main .supercharge-workflow .features-wrapper {
+  grid-template-columns: 312px;
+  justify-content: center;
+  row-gap: 58px;
+  max-width: 1112px;
+  padding-top: 90px;
+}
+.main .supercharge-workflow .features-wrapper h3 {
+  margin: 40px 0 20px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--dark-grayish-blue-neutral);
+}
+.main .supercharge-workflow .features-wrapper p {
+  line-height: 1.7;
+}
+
+.main .supercharge-workflow .companies-logos {
+  margin-top: 130px;
+  max-width: 1112px;
+  grid-template-columns: 144px;
+  justify-content: center;
+  row-gap: 66px;
+}
+
+.main .download-for {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1140px) {
+  .main {
+    padding: 160px 0 0
+  }
+
+  .main section > .heading h2 {
+    font-size: 36px;
+  }
+
+  .main section .heading p {
+    font-size: 18px;
+  }
+
+  .main .keep-your-snippets .illustration-info {
+    grid-template-columns: minmax(772px, auto) 1fr;
+    grid-template-rows: repeat(4, 86px);
+    place-items: flex-start;
+    column-gap: 106px;
+    text-align: left;
+    position: relative;
+    padding-top: 58px;
+    overflow: hidden;
+    column-gap: 30px;
+    margin-top: 76px;
+  }
+
+  .main .keep-your-snippets .illustration-info img {
+    position: absolute;
+    left: -40px;
+    top: 0;
+  }
+
+  .main .keep-your-snippets .illustration-info .feature {
+    max-width: 338px;
+  }
+
+  .main .keep-your-snippets .illustration-info .feature h3,
+  .main .keep-your-snippets .illustration-info .feature p {
+    text-align: left;
+  }
+
+  .main .keep-your-snippets .illustration-info .feature {
+    grid-column-start: 2;
+  }
+
+  .main .access-clipboard .image-devices {
+    margin-top: 100px;
+  }
+
+  .main .supercharge-workflow .features-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 0;
+    column-gap: 44px;
+    place-items: center;
+    padding-top: 75px;
+  }
+
+  .main .supercharge-workflow .features-wrapper article:not(:first-child) {
+    padding-bottom: 20px;
+  }
+
+  .main .supercharge-workflow .companies-logos {
+    margin-top: 130px;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    place-items: center;
+    row-gap: 0;
+    column-gap: 98px;
+  }
+}
