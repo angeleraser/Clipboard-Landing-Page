@@ -12,7 +12,6 @@ const Header = () => {
           "Clipboard allows you to track and organize everything you copy. Instantly acess you clipboard on all your devices."
         }
       />
-          <vue-widget msg="Bololo"></vue-widget>
     </header>
   );
 };
